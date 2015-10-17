@@ -1,0 +1,30 @@
+
+
+@font-face {
+    font-family: 'book';
+    src: url('intro-book-webfont.eot');
+    src: url('intro-book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('intro-book-webfont.woff2') format('woff2'),
+         url('intro-book-webfont.woff') format('woff'),
+         url('intro-book-webfont.ttf') format('truetype'),
+         url('intro-book-webfont.svg#intro_bookregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'black';
+    src: url('intro-black-caps-webfont.eot');
+    src: url('intro-black-caps-webfont.eot?#iefix') format('embedded-opentype'),
+         url('intro-black-caps-webfont.woff2') format('woff2'),
+         url('intro-black-caps-webfont.woff') format('woff'),
+         url('intro-black-caps-webfont.ttf') format('truetype'),
+         url('intro-black-caps-webfont.svg#intro_black_capsregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
