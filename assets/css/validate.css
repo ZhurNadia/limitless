@@ -70,7 +70,7 @@ body.rtl .formError .formErrorArrow {
     box-shadow: none;
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
-    margin: 0px 0 0 12px;
+    margin: 0 0 0 12px;
     top:2px;
 }
 
@@ -80,12 +80,11 @@ body.rtl .formError .formErrorArrow {
     box-shadow: 0 2px 3px #444;
     -moz-box-shadow: 0 2px 3px #444;
     -webkit-box-shadow: 0 2px 3px #444;
-    font-size: 0px;
+    font-size: 0;
     height: 1px;
     background: #ee0101;
     margin: 0 auto;
     line-height: 0;
-    font-size: 0;
     display: block;
 }
 
@@ -151,5 +150,4 @@ body.rtl .formError .formErrorArrow {
     width: 1px;
     border: none;
     background: #ddd;
-}
 }
