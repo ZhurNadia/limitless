@@ -4,6 +4,7 @@ var gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     sass = require('gulp-sass'),
     uglify = require('gulp-uglify'),
+    webserver = require('gulp-webserver'),
     rename = require('gulp-rename');
 
 // Concat css
@@ -27,6 +28,15 @@ gulp.task('uglify', function() {
         .pipe(concat('index.js'))
         .pipe(uglify())
         .pipe(gulp.dest('./build/js'));
+});
+
+gulp.task('webserver', function() {
+    gulp.src('public')
+        .pipe(webserver({
+            livereload: true,
+            directoryListing: true,
+            open: true
+        }));
 });
 
 
