@@ -1,17 +1,4 @@
-/**
- * Created by dbimok on 14.10.15.
- */
-$(window).load(function() {
-    $('#status').fadeOut();
-    $('#preloader').delay(350).fadeOut('slow');
-    $('#preloader .textload').delay(0).fadeOut('slow');
-    $('body').delay(350).css({
-        'overflow': 'visible'
-    });
-});
-
 $(document).ready(function() {
-
     $(".team-image-overlay").fancybox({
         prevEffect	: 'none',
         nextEffect	: 'none',
@@ -19,6 +6,9 @@ $(document).ready(function() {
         helpers	: {
             title	: {
                 type: 'outside'
+            },
+            overlay: {
+                locked: false
             }
         }
     });
@@ -73,31 +63,32 @@ $(document).ready(function() {
         });
     };
     window.onload = init();
-    $(window).resize(function() {
-        $('.offset').css('padding-top', $('.navbar').height() + 'px');
-    });
-    
-});
-
-new WOW().init();
-$("#promo").backstretch("images/fog.jpg");
-
-jQuery(document).ready(function(){
     jQuery("#contact-form").validationEngine({
         promptPosition : "bottomLeft",
         scroll: scroll,
         autoHidePrompt: true,
         autoHideDelay: 3000,
-        scrollOffset: 100
+        scrollOffset: 100,
+        binded: false
     });
 
     $('.latest-work-item').equalHeights();
- 
+    $('.team-text').equalHeights();
+    $('.media-body').equalHeights();
+    new WOW().init();
+    $('#promo').backstretch("images/fog.jpg");
+    $('#tel').inputmask("(999) 999-99-99");
+
 });
+
 
 $(window).resize(function(){
     $('.latest-work-item').css('height','auto');
     $('.latest-work-item').equalHeights();
+    $('.team-text').css('height','auto');
+    $('.team-text').equalHeights();
+    $('media-body').css('height','auto');
+    $('media-body').equalHeights();
 });
 
 

@@ -52,10 +52,10 @@
     </div>
   </header>
   <main class="body-wrapper">
-    <section id="promo" class="promo">
+    <section id="promo" class="promo wow fadeIn">
       <div class="promo-overlay">
         <div class="promo-content-wrapper">
-          <div class="promo-content wow fadeIn">
+          <div class="promo-content">
             <div class="promo-heading ">
               Интерактивность <br> у нас в крови
             </div>
@@ -70,11 +70,11 @@
     <section id="latest-works" class="latest-works wow fadeIn">
       <div class="light-container">
         <div class="container inner">
-          <div class="section-title text-center">
-            <h2>
+          <div >
+            <h2 class="section-title text-center">
               Последние работы
             </h2>
-            <div class="subtitle">
+            <div class="text-center">
               Реализовано более 200 проектов разных направлений от лендингов до интернет-магазинов
             </div>
           </div>
@@ -161,18 +161,18 @@
       </div>
     </section>
 
-    <section id="about-us" class="about-us">
+    <section id="about-us" class="about-us wow fadeIn">
       <div class="dark-container">
         <div class="container inner">
-          <div class="top wow fadeIn">
+          <div class="top">
             <h2 class="section-title text-center">О нас</h2>
           </div>
           <div class="middle">
             <div class="row">
-              <div class="col-xs-12 col-md-5 wow fadeIn">
+              <div class="col-xs-12 col-md-5">
                 <img class="img-responsive" src="images/about_us/our_team2.png" alt="Агенство ">
               </div>
-              <div class="col-xs-12 col-md-7 wow fadeIn">
+              <div class="col-xs-12 col-md-7">
                 <blockquote>
                   — А можно так — утром стулья, а вечером — сайт?<br>
                   — Можно! Но сайт — вперёд!
@@ -195,12 +195,12 @@
       </div>
     </section>
 
-    <section id="advantages" class="advantages">
+    <section id="advantages" class="advantages wow fadeIn">
       <div class="light-container">
         <div class="container inner">
           <div class="bottom">
             <div class="row">
-              <div class="col-xs-12 col-md-6 wow fadeIn">
+              <div class="col-xs-12 col-md-6">
                 <h3 class="subtitle text-center">
                   Почему нас выбирают
                 </h3>
@@ -488,8 +488,8 @@
         </div>
     </section>
 
-    <section id="testimonials" class="testimonials wow fadeIn">
-      <div class="ligth-container">
+    <section id="testimonials" class="testimonials parallax-layer wow fadeIn">
+      <div class="ligh1t-container">
         <div class="container inner">
           <div id="testimonials-carousel" class="owl-carousel">
             <div>
@@ -536,9 +536,8 @@
         <div class="container inner">
           <div class="row">
             <div class="col-xs-12">
-              <h3 class="text-center">Связаться с нами</h3>
+              <h2 class="section-title text-center">Связаться с нами</h2>
               <p class="text-center">Если у Вас есть какие-либо вопросы, пожалуйста, свяжитесь с нами</p>
-
               <form id="contact-form" class="contacts" action="/">
                 <div class="form-container">
                   <div class="row">
@@ -552,14 +551,14 @@
                     <div class="col-sm-6">
                       <div class="form-field">
                         <label>
-                          <input type="email" name="email" placeholder="Ваш e-mail" class="validate[required,custom[email]]" >
+                          <input type="text" name="email" placeholder="Ваш e-mail" class="validate[required,custom[email]]" >
                         </label>
                       </div>
                     </div>
                     <div class="col-sm-6">
                       <div class="form-field">
                         <label>
-                          <input type="tel" name="tel" placeholder="Ваш телефон в формате +380999999999" class="validate[required,custom[phone]]">
+                          <input id="tel" type="tel" name="tel" placeholder="Ваш номер телефон" class="validate[required]">
                         </label>
                       </div>
                     </div>
@@ -578,23 +577,6 @@
                     </div>
                   </div>
                   <textarea name="Message" class="validate[required]" placeholder="Напишите здесь свое сообщение ..."></textarea>
-                  <div class="radio-set text-left">
-                    <label>Тема</label>
-                    <label>
-                      <input type="radio" name="subject" value="General">
-                      <span></span>
-                      Общие вопросы
-                    </label>
-                    <label>
-                      <input type="radio" name="subject" value="Hi">
-                      <span></span>
-                      Сказать привет
-                    </label>
-                    <label>
-                      <input type="radio" name="subject" value="Other">
-                      Другое
-                    </label>
-                  </div>
                   <input type="submit" class="btn" value="Отправить">
                 </div>
               </form>

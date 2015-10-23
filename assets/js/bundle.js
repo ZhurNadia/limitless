@@ -9,6 +9,8 @@
 //= scripts/owl.carousel.js
 //= scripts/scrolling-nav.js
 //= scripts/wow.min.js
-//= scripts/plugins.js
+//= scripts/inputmask.js
+//= scripts/jquery.inputmask.js
+//= scripts/equel.js
 //= scripts/scripts.js
 
