@@ -1,4 +1,8 @@
 $(document).ready(function() {
+
+    new WOW().init();
+    $('#promo').backstretch("images/fog.jpg");
+    $('#tel').inputmask("(999) 999-99-99");
     $(".team-image-overlay").fancybox({
         prevEffect	: 'none',
         nextEffect	: 'none',
@@ -35,14 +39,14 @@ $(document).ready(function() {
         itemsDesktop : [1199,3],
         itemsDesktopSmall : [980,2],
         itemsTablet: [768,2],
-        itemsTabletSmall: false,
+        itemsTabletSmall: [600,1],
         itemsMobile : [479,1],
         autoPlay:true,
         pagination:true,
         stopOnHover : false,
         paginationNumbers: false,
         navigation: true,
-        navigationText:	["<",">"]
+        navigationText:	["<i class=\'fa fa-arrow-left\'></i>","<i class=\'fa fa-arrow-right\'></i>"]
 
 
     });
@@ -72,26 +76,19 @@ $(document).ready(function() {
         binded: false
     });
 
-    $('.latest-work-item').equalHeights();
-    $('.team-text').equalHeights();
-    $('.media-body').equalHeights();
-    new WOW().init();
-    $('#promo').backstretch("images/fog.jpg");
-    $('#tel').inputmask("(999) 999-99-99");
+
 
 });
 
 
-$(window).resize(function(){
-    $('.latest-work-item').css('height','auto');
-    $('.latest-work-item').equalHeights();
-    $('.team-text').css('height','auto');
-    $('.team-text').equalHeights();
-    $('media-body').css('height','auto');
-    $('media-body').equalHeights();
+$(function() {
+    $('.latest-work-text').matchHeight();
+    $('.media').matchHeight({
+        byRow: false,
+        property: 'height'
+    });
+    $('.team-text').matchHeight();
 });
-
-
 
 
 

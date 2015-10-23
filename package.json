@@ -18,6 +18,8 @@
     "browser-sync": "~2.9.11",
     "gulp-sourcemaps": "~1.6.0",
     "gulp-imagemin": "~2.3.0",
-    "uglify": "~0.1.5"
+    "uglify": "~0.1.5",
+    "es6-promise": "~3.0.2",
+    "ms": "~0.7.1"
   }
 }
