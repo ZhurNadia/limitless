@@ -8796,9 +8796,16 @@ $(function() {
     this.options)});b._afterUpdate&&b._afterUpdate(a,b._groups)};b._update=function(a,e){if(e&&"resize"===e.type){var d=c(window).width();if(d===n)return;n=d}a?-1===f&&(f=setTimeout(function(){q(e);f=-1},b._throttle)):q(e)};c(b._applyDataApi);c(window).bind("load",function(a){b._update(!1,a)});c(window).bind("resize orientationchange",function(a){b._update(!0,a)})})(jQuery);
 $(document).ready(function() {
 
+    /* Wow Init */
     new WOW().init();
+
+    /* Bakcstretch */
     $('#promo').backstretch("images/fog.jpg");
+
+    /* Input Mask */
     $('#tel').inputmask("(999) 999-99-99");
+
+    /* Fancybox */
     $(".team-image-overlay").fancybox({
         prevEffect	: 'none',
         nextEffect	: 'none',
@@ -8813,6 +8820,7 @@ $(document).ready(function() {
         }
     });
 
+    /* Owl Testimonials */
     $("#testimonials-carousel").owlCarousel({
         items : 1,
         itemsCustom : false,
@@ -8825,10 +8833,9 @@ $(document).ready(function() {
         pagination:true,
         stopOnHover : false,
         paginationNumbers: false
-
-
     });
 
+    /* Owl Lastest Works */
     $("#latest-works-corousel").owlCarousel({
         items : 3,
         itemsCustom : false,
@@ -8847,6 +8854,7 @@ $(document).ready(function() {
 
     });
 
+    /* Navbar fixed class */
     function init() {
         "use strict";
         window.addEventListener('scroll', function(e){
@@ -8863,6 +8871,8 @@ $(document).ready(function() {
         });
     };
     window.onload = init();
+
+    /* Form validation */
     jQuery("#contact-form").validationEngine({
         promptPosition : "bottomLeft",
         scroll: scroll,
@@ -8876,7 +8886,7 @@ $(document).ready(function() {
 
 });
 
-
+    /* Height Equelazing */
 $(function() {
     $('.latest-work-text').matchHeight();
     $('.media').matchHeight({
