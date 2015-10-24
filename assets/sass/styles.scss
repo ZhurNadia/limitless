@@ -549,20 +549,24 @@ blockquote::before, blockquote::after {
 
   .facts-text {
     font-family: 'book', sans-serif, Arial;
+
   }
 
   .fa {
     display: block;
     font-size: 60px;
     margin-bottom: 20px;
-    transition: all 0.5s ease-in-out;
-    &:hover {
-      transform: rotate(360deg);
-    }
   }
 
   .facts-item {
     margin-bottom: 30px;
+    &:hover {
+      color: $brand-color-hover;
+    }
+
+    &.last {
+      margin-bottom: 0;
+    }
   }
 
   /* Custom, iPhone Retina */
@@ -597,7 +601,7 @@ blockquote::before, blockquote::after {
 /* Testimonials */
 
 .testimonials {
-  background: url('../images/bg-testimonials.png');
+  background: url('../images/bg-testimonials.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
